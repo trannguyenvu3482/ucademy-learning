@@ -5,3 +5,7 @@ export { default as IconCart } from "./IconCart";
 export { default as IconUser } from "./IconUser";
 export { default as IconComment } from "./IconComment";
 export { default as Icon404 } from "./Icon404";
+export { default as IconDefault } from "./IconDefault";
+export { default as IconEye } from "./IconEye";
+export { default as IconStar } from "./IconStar";
+export { default as IconTime } from "./IconTime";

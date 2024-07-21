@@ -4,11 +4,11 @@ import IconExplore from "../icons/IconExplore";
 import { menuItems } from "@/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ActiveLink from "../common/ActiveLink";
+import { ActiveLink } from "../common";
 
 const Sidebar = () => {
   return (
-    <div className="p-5 border-r border-r-gray-200">
+    <div className="p-5 border-r border-r-gray-200 bg-white">
       <Link href="/" className="logo inline-block font-bold text-3xl mb-5">
         <span className="text-primary">U</span>cademy
       </Link>
