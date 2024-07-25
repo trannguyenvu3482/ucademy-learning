@@ -3,7 +3,7 @@ import CourseItem from "@/components/course/CourseItem";
 import Heading from "@/components/typography/Heading";
 import React from "react";
 
-const page = () => {
+const page = async () => {
   return (
     <div>
       <Heading>Khám phá</Heading>
