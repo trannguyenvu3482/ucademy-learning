@@ -7,7 +7,7 @@ import React from "react";
 const page = async () => {
   const user = await createUser({
     clerkId: "clerk_123",
-    email_address: "trannguyenvu3482@gmail.com",
+    email: "trannguyenvu3482@gmail.com",
     username: "trannguyenvu3482",
   });
   return (
