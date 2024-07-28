@@ -3,10 +3,10 @@ import React from "react";
 
 const PageNotFound = () => {
   return (
-    <div className="grid h-screen place-content-center bg-white px-4">
+    <div className="grid h-screen place-content-center bg-white px-4 dark:bg-grayDarkest">
       <div className="text-center">
         <Icon404 />
-        <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 className="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
           Uh-oh!
         </h1>
 

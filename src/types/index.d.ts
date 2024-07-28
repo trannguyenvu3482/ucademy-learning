@@ -1,10 +1,10 @@
-type TActiveLinkProps = {
+export type TActiveLinkProps = {
   url: string;
   children: React.ReactNode;
 };
 
 // User
-type TCreateUserParams = {
+export type TCreateUserParams = {
   clerkId: string;
   username: string;
   email: string;
@@ -12,4 +12,7 @@ type TCreateUserParams = {
   avatar?: string;
 };
 
-export type { TActiveLinkProps, TCreateUserParams };
+export type TCreateCourseParams = {
+  title: string;
+  slug: string;
+};
