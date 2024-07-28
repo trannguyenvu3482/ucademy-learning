@@ -49,9 +49,11 @@ const userSchema = new Schema<ICourse>({
   },
   price: {
     type: Number,
+    default: 0,
   },
   sale_price: {
     type: Number,
+    default: 0,
   },
   status: {
     type: String,

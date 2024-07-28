@@ -1,4 +1,5 @@
 import Heading from "@/components/common/Heading";
+import CourseUpdate from "./CourseUpdate";
 
 const UpdateCourse = ({
   searchParams,
@@ -10,6 +11,7 @@ const UpdateCourse = ({
   return (
     <>
       <Heading className="mb-8">Cập nhật khóa học</Heading>
+      <CourseUpdate slug={searchParams.slug} />
     </>
   );
 };
