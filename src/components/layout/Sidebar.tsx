@@ -1,19 +1,16 @@
 "use client";
-import React from "react";
-import IconPlay from "../icons/IconPlay";
-import IconExplore from "../icons/IconExplore";
 import { menuItems } from "@/constants";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { ActiveLink } from "../common";
 import { useAuth, UserButton } from "@clerk/nextjs";
+import Link from "next/link";
+import React from "react";
+import { ActiveLink } from "../common";
 import { ModeToggle } from "../common/ModeToggle";
 import { IconUser } from "../icons";
 
 const Sidebar = () => {
   const { userId } = useAuth();
   return (
-    <div className="p-5 border-r border-r-gray-200 dark:border-opacity-10 bg-white flex flex-col dark:bg-grayDarker">
+    <div className="hidden sticky top-0 h-screen z-10 p-5 border-r border-r-gray-200 dark:border-opacity-10 bg-white lg:flex flex-col dark:bg-grayDarker">
       <Link href="/" className="logo inline-block font-bold text-3xl mb-5">
         <span className="text-primary">U</span>cademy
       </Link>

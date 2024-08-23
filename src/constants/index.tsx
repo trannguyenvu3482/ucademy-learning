@@ -1,11 +1,12 @@
 import {
-  IconPlay,
-  IconExplore,
-  IconStudy,
   IconCart,
-  IconUser,
   IconComment,
+  IconExplore,
+  IconPlay,
+  IconStudy,
+  IconUser,
 } from "@/components/icons";
+import { ECourseLevel, ECourseStatus } from "@/types/enum";
 
 export const menuItems: {
   url: string;
@@ -43,3 +44,30 @@ export const menuItems: {
     icon: <IconComment className="size-5" />,
   },
 ];
+
+export const courseLevels: {
+  value: ECourseLevel;
+  label: string;
+}[] = [
+  { value: ECourseLevel.BEGINNER, label: "Dễ" },
+  { value: ECourseLevel.INTERMEDIATE, label: "Trung bình" },
+  { value: ECourseLevel.ADVANCED, label: "Nâng cao" },
+];
+
+export const courseLevelsLabel: Record<ECourseLevel, string> = {
+  [ECourseLevel.BEGINNER]: "Dễ",
+  [ECourseLevel.INTERMEDIATE]: "Trung bình",
+  [ECourseLevel.ADVANCED]: "Nâng cao",
+};
+
+export const courseStatus = [
+  { value: ECourseStatus.APPROVED, label: "Đã duyệt" },
+  { value: ECourseStatus.PENDING, label: "Đang chờ duyệt" },
+  { value: ECourseStatus.REJECTED, label: "Từ chối" },
+];
+
+export const courseStatusLabel: Record<ECourseStatus, string> = {
+  [ECourseStatus.APPROVED]: "Đã duyệt",
+  [ECourseStatus.PENDING]: "Đang chờ duyệt",
+  [ECourseStatus.REJECTED]: "Từ chối",
+};
