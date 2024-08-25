@@ -228,7 +228,7 @@ const CourseUpdate = ({ data }: { data: ICourse }) => {
                 <FormLabel>Mô tả</FormLabel>
                 <FormControl>
                   <Textarea
-                    className="whitespace-pre-wrap"
+                    className="whitespace-pre-wrap h-[300px]"
                     placeholder="Nhập mô tả..."
                     {...field}
                   />
@@ -389,7 +389,7 @@ const CourseUpdate = ({ data }: { data: ICourse }) => {
                       });
                     }}
                   >
-                    <IconAdd className="size-5" />
+                    <IconAdd className="size-5 text-black dark:text-white" />
                   </button>
                 </FormLabel>
                 <FormControl>
@@ -443,7 +443,7 @@ const CourseUpdate = ({ data }: { data: ICourse }) => {
                       });
                     }}
                   >
-                    <IconAdd className="size-5" />
+                    <IconAdd className="size-5 text-black dark:text-white" />
                   </button>
                 </FormLabel>
                 <FormControl>

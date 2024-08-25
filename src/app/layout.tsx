@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { manrope } from "@/utils/fonts";
-import Sidebar from "@/components/layout/Sidebar";
-import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "@/components/common/ThemeProvider";
-import { ToastContainer, toast } from "react-toastify";
+import { manrope } from "@/utils/fonts";
+import { ClerkProvider } from "@clerk/nextjs";
+import type { Metadata } from "next";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./globals.scss";
 
 export const metadata: Metadata = {
   title: "Ucademy",

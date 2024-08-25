@@ -26,7 +26,7 @@ const CourseItem = ({ data }: { data: ICourse }) => {
     <div className="course-item bg-white border-gray-100 p-4 rounded-2xl dark:bg-grayDarker border dark:border-opacity-10">
       <Link href={`/course/${data?.slug}`} className="block h-[180px] relative">
         <Image
-          src={data?.image || "https://picsum.photos/600/300"}
+          src={data?.image || "https://placehold.co/600x400/png?text=No+Image"}
           alt=""
           width={300}
           height={200}
@@ -37,8 +37,10 @@ const CourseItem = ({ data }: { data: ICourse }) => {
           New
         </span>
       </Link>
-      <div className="pt-4">
-        <h3 className="font-bold text-lg mb-5">{data?.title}</h3>
+      <div className="pt-4 flex flex-col h-[224px]">
+        <h3 className="font-bold text-lg mb-5 flex-grow-0 text-ellipsis overflow-hidden line-clamp-2">
+          {data?.title}
+        </h3>
         <div className="flex items-center gap-3 mb-5 text-xs text-gray-500 dark:text-grayDark">
           {courseInfo.map((info, index) => (
             <div key={index} className="flex items-center gap-1">
@@ -47,7 +49,7 @@ const CourseItem = ({ data }: { data: ICourse }) => {
             </div>
           ))}
           <span className="font-bold text-primary ml-auto text-base">
-            {data?.price || 0}đ
+            {(data?.price || 0).toLocaleString()}đ
           </span>
         </div>
         <Link

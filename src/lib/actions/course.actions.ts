@@ -65,11 +65,11 @@ export async function updateCourse(
         new: true,
       }
     );
+    revalidatePath(params.path || "/");
     return {
       success: true,
       message: "Cập nhật khóa học thành công",
     };
-    revalidatePath(`/`);
   } catch (error: any) {
     console.log(error);
     return {

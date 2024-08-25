@@ -1,9 +1,13 @@
 import CourseManage from "@/components/course/CourseManage";
+import { getAllCourses } from "@/lib/actions/course.actions";
 
-const page = () => {
+const page = async () => {
+  const courses = await getAllCourses();
   return (
     <div>
-      <CourseManage />
+      <CourseManage
+        courses={courses ? JSON.parse(JSON.stringify(courses)) : []}
+      />
     </div>
   );
 };

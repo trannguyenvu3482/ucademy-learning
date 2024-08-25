@@ -1,6 +1,6 @@
 import Heading from "@/components/common/Heading";
+import CourseUpdate from "@/components/course/CourseUpdate";
 import { getCourseBySlug } from "@/lib/actions/course.actions";
-import CourseUpdate from "./CourseUpdate";
 
 const UpdateCourse = async ({
   searchParams,

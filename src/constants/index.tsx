@@ -50,7 +50,10 @@ export const courseLevels: {
   label: string;
 }[] = [
   { value: ECourseLevel.BEGINNER, label: "Dễ" },
-  { value: ECourseLevel.INTERMEDIATE, label: "Trung bình" },
+  {
+    value: ECourseLevel.INTERMEDIATE,
+    label: "Trung bình",
+  },
   { value: ECourseLevel.ADVANCED, label: "Nâng cao" },
 ];
 
@@ -61,13 +64,32 @@ export const courseLevelsLabel: Record<ECourseLevel, string> = {
 };
 
 export const courseStatus = [
-  { value: ECourseStatus.APPROVED, label: "Đã duyệt" },
-  { value: ECourseStatus.PENDING, label: "Đang chờ duyệt" },
-  { value: ECourseStatus.REJECTED, label: "Từ chối" },
+  {
+    value: ECourseStatus.APPROVED,
+    label: "Đã duyệt",
+    color: "text-green-500 bg-green-500",
+  },
+  {
+    value: ECourseStatus.PENDING,
+    label: "Đang chờ duyệt",
+    color: "text-yellow-500 bg-yellow-500",
+  },
+  {
+    value: ECourseStatus.REJECTED,
+    label: "Từ chối",
+    color: "text-red-500 bg-red-500",
+  },
 ];
 
 export const courseStatusLabel: Record<ECourseStatus, string> = {
   [ECourseStatus.APPROVED]: "Đã duyệt",
   [ECourseStatus.PENDING]: "Đang chờ duyệt",
   [ECourseStatus.REJECTED]: "Từ chối",
+};
+
+export const commonClassNames = {
+  status:
+    "bg-opacity-10 border border-current rounded-md font-medium px-3 py-1 text-sm whitespace-nowrap",
+  actionButton:
+    "size-10 rounded-md border border-gray-200 flex items-center justify-center p-2 bg-gray-100 hover:bg-gray-50 text-gray-500 border-DarkMode dark:bg-transparent dark:hover:bg-gray-800",
 };

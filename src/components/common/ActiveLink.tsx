@@ -8,10 +8,10 @@ const ActiveLink = ({ url, children }: TActiveLinkProps) => {
   const isActive = pathName === url;
   return (
     <Link
-      className={`p-3 rounded-md flex items-center gap-2 transition-all w-full dark:text-grayDark ${
+      className={`p-3 rounded-md flex items-center gap-2 transition-all w-full dark:text-grayDark text-md bg-opacity-50 ${
         isActive
-          ? "!text-white bg-primary svg-animate"
-          : "hover:!text-white hover:!bg-primary hover:!bg-opacity-10 "
+          ? "!text-white bg-primary svg-animate font-semibold"
+          : "hover:!bg-primary hover:!bg-opacity-10 "
       }`}
       href={url}
     >
